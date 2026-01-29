@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <title>Fortigate MAC Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="icon.png" />
+</head>
+<body>
+    <h1>Fortigate MAC Script Generator</h1>
+
+    <label for="fname">Fortigate Name:</label>
+    <input type="text" id="fname" value="UK-Firewall-01"><br><br>
+
+    <label for="fgroup">Group Choice:</label>
+    <select id="fgroup">
+        <option value="1">Staff Devices</option>
+        <option value="2">Student Devices</option>
+        <option value="3">Intune Devices</option>
+        <option value="4">Securly Filtered Devices</option>
+    </select><br><br>
+
+    <label>Upload File (.txt or .csv):</label>
+    <input type="file" id="fileInput" accept=".txt,.csv" /><br><br>
+
+    <label for="fmac">Paste MAC List (Text/CSV):</label>
+    <textarea id="fmac" rows="10" cols="50" placeholder="Paste test here..."></textarea><br><br>
+
+    <button id="btnConvert">Generate Script</button>
+
+    <div id="statsArea">
+        <strong>Found:</strong> <span id="macCount">0</span> MAC Addresses.
+        <button id="btnToggleList">Show List</button>
+        <div id="macListContainer">
+
+        </div>
+    </div>
+
+    <h3>Generated Script:</h3>
+    <div id="output"></div>
+
+    <button id="btnCopy">Copy to Clipboard</button>
+
+    <script src="config.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

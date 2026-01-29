@@ -1,0 +1,116 @@
+﻿/* style.css */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    background-color: #fafafa; /* Added a subtle background color */
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: monospace; /* Better for MAC addresses */
+}
+
+select, input {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+label {
+    font-weight: 600;
+    margin-top: 1rem;
+    display: block;
+    color: #333;
+}
+
+button {
+    padding: 1rem 2rem;
+    background-color: #f57c00;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+    button:hover {
+        background-color: #e65100;
+    }
+
+#output {
+    background-color: white;
+    padding: 1rem;
+    white-space: pre-wrap; /* Keeps the newlines from the script */
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-height: 50px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.error {
+    color: #d8000c;
+    border-color: #d8000c !important;
+    background-color: #ffbaba !important;
+}
+
+#fileInput {
+    margin-bottom: 1rem;
+    display: block;
+}
+
+#statsArea {
+    display: none;
+    margin-top: 1rem;
+    padding: 10px;
+    background-color: #fff3e0;
+    border: 1px solid #ffcc80;
+    border-radius: 4px;
+}
+
+#btnToggleList {
+    padding: 5px 10px;
+    margin-left: 10px;
+    font-size: 0.9rem;
+    background-color: #f57c00;
+    width: auto;
+    display: inline-block;
+}
+
+#btnToggleList:hover {
+    background-color: #e65100;
+}
+
+#macListContainer {
+    display: none;
+    margin-top: 10px;
+    max-height: 100px;
+    overflow-y: auto;
+    background: white;
+    padding: 5px;
+    border: 1px solid #ccc;
+    font-family: monospace;
+}
+
+#macListContainer div {
+    padding: 2px 5px;
+    border-bottom: 1px solid #eee;
+}
+
+#btnCopy {
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 0.5rem;
+    background-color: #f57c00;
+}

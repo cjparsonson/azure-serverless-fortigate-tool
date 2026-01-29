@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="FortigateConverter/FortigateConverter.csproj" />
+  <Project Path="FortigateFrontend/FortigateFrontend.csproj" />
+</Solution>
