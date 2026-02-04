@@ -102,11 +102,11 @@ namespace FortigateConverter
             string groupChoice = "";
             switch (data.GroupChoice)
             {
-                case 1: groupChoice = "Staff - Device - MAC Addresses"; break;
-                case 2: groupChoice = "Student - Device - MAC Addresses"; break;
-                case 3: groupChoice = "Microsft Intune Devices"; break;
+                case 1: groupChoice = "Staff - device - MAC Addresses"; break;
+                case 2: groupChoice = "Student - device - MAC Addresses"; break;
+                case 3: groupChoice = "Microsoft Intune Devices"; break;
                 case 4: groupChoice = "Securly Filtered - Device MAC Addresses"; break;
-                default: groupChoice = "Staff - Device - MAC Addresses"; break;
+                default: groupChoice = "Staff - device - MAC Addresses"; break;
             }
 
             // STEP 6: BUILD FINAL SCRIPT
