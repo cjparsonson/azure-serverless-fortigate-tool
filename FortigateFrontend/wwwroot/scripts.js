@@ -37,6 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 async function handleConversion() {
+    console.log("Using URL:", CONFIG.AZURE_FUNCTION_URL); // Debug check
+
     const outputDiv = document.getElementById('output');
     const statsArea = document.getElementById('statsArea');
     const macInput = document.getElementById('fmac');

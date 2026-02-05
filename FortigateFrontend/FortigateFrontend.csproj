@@ -12,11 +12,16 @@
 
   <ItemGroup>
     <None Include="wwwroot\index.html" />
-    <None Include="wwwroot\scripts.js" />
+    <None Include="wwwroot\scripts.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="wwwroot\styles.css" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="wwwroot\config.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Update="wwwroot\icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
