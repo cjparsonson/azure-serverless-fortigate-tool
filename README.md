@@ -52,7 +52,7 @@ A cloud-native microservice built on **Azure Serverless** architecture. This too
 
 ```mermaid
 graph LR
-    User[User / Browser] --HTTPS--> Frontend[Azure Web App<br/>Frontend]
+    User[User / Browser] --HTTPS--> Frontend[Azure Static Site<br/>Frontend]
     Frontend --REST API / JSON--> Backend[Azure Function<br/>Backend API]
     Backend --Logic--> Script[Generate Script]
 
