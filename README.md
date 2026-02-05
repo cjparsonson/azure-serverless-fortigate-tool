@@ -22,7 +22,7 @@ A cloud-native microservice built on **Azure Serverless** architecture. This too
 
 ## 🏗 Architecture
 
-- **Frontend:** Azure App Service (Static HTML/JS)
+- **Frontend:** Azure Blob Storage Static Website (HTML/CSS/JS)
 - **Backend:** Azure Functions (C# .NET 8 Isolated Worker)
 - **Security:** CORS policies, IP Access Restrictions (Layer 4 Firewall), Usage Analysis.
 - **Monitoring:** Azure Monitor Budget & Traffic Alerts.
@@ -31,7 +31,7 @@ A cloud-native microservice built on **Azure Serverless** architecture. This too
 
 - **Serverless Compute:** backend logic runs on-demand via HTTP Triggers (Consumption Plan).
 - **Security-First:** Implemented least-privilege CORS and IP whitelisting for internal tools.
-- **Cost Optimized:** Runs entirely on Azure Free/Shared tiers.
+- **Cost Optimized:** Runs entirely on Azure Free/Shared tiers with blob storage static hosting.
 
 ## 💻 Tech Stack
 
@@ -44,7 +44,9 @@ A cloud-native microservice built on **Azure Serverless** architecture. This too
 1. Clone the repo.
 2. Open `FortigateConverter.sln` in Visual Studio.
 3. Run the Function Project (Backend).
-4. Run the Frontend Project.
+4. Run the Frontend Project (ASP.NET Core - local development server only).
+
+**Note:** The FortigateFrontend ASP.NET Core project is used for local development convenience only. In production, the static files (`wwwroot` contents) are deployed to an Azure Blob Storage Static Website.
 
 ## 📊 Architecture Diagram
 
@@ -61,4 +63,3 @@ graph LR
 
     style Backend fill:#0078d4,stroke:#fff,stroke-width:2px,color:#fff
     style Frontend fill:#5c2d91,stroke:#fff,stroke-width:2px,color:#fff
-```
